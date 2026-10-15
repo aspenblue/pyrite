@@ -16,10 +16,10 @@ modules:
   - from-file: ../modules/30-apps/common/apps.yml
   - from-file: ../modules/60-shell/pantheon/pantheon-shell.yml
   - from-file: ../modules/60-shell/pantheon/lightdm.yml
-  - from-file: ../modules/70-desktop/common/apps.yml
+#  - from-file: ../modules/70-desktop/common/apps.yml
   - from-file: ../modules/70-desktop/pantheon/pantheon-apps.yml
   - from-file: ../modules/80-cleanup/common/apps-clean.yml
-  - from-file: ../modules/80-cleanup/pantheon/pantheon-clean.yml
+#  - from-file: ../modules/80-cleanup/pantheon/pantheon-clean.yml
 
 
   # -----------------------------------------------
@@ -34,8 +34,8 @@ modules:
       PRETTY_NAME: "Aspenblue Pyrite 44 (Universal Blue)"
       VERSION: "44"
       DEFAULT_HOSTNAME: pyrite
-      #VARIANT: "Classic Edition"
-      #VARIANT_ID: classic
+      #VARIANT: ""
+      #VARIANT_ID: 
       HOME_URL: "https://github.com/aspenblue/pyrite"
 
 
