@@ -30,7 +30,6 @@ modules:
         - elementary-sideload
         - gala
         - gcr
-        - PackageKit-bootc
         - pantheon-agent-polkit
         - pantheon-session-settings
         - plymouth-theme-elementary
