@@ -12,6 +12,11 @@ modules:
       copr:
         - garaevdi/pantheon-rpm 
 
+
+  # -----------------------------------------------
+  # Pantheon packages
+  # -----------------------------------------------
+
   - type: dnf        
     install:
       packages:
@@ -30,31 +35,6 @@ modules:
         - switchboard
         - wingpanel
         - xdg-desktop-portal-pantheon
-
-
-  # -----------------------------------------------
-  # Pantheon packages
-  # -----------------------------------------------
-
-#  - type: dnf
-#    install:
-#      install-weak-deps: false
-#      packages:
-#        - elementary-dock
-#        - elementary-greeter
-#        - elementary-initial-setup
-#        - elementary-monitor
-#        - elementary-settings
-#        - elementary-shortcut-overlay
-#        - elementary-sideload
-#        - gala
-#        - gcr
-#        - pantheon-agent-polkit
-#        - pantheon-session-settings
-#        - plymouth-theme-elementary
-#        - switchboard
-#        - wingpanel
-#        - xdg-desktop-portal-pantheon
 
 
   # -----------------------------------------------
