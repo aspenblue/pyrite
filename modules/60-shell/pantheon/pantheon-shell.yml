@@ -34,7 +34,6 @@ modules:
         - elementary-sideload
         - gala
         - gcr
-        - lxpolkit
         - pantheon-agent-polkit
         - pantheon-session-settings
         - plymouth-theme-elementary
