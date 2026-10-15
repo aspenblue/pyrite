@@ -52,4 +52,14 @@ modules:
   - type: files
     files:
       - source: rootfs/pantheon
-        destination: /        
+        destination: /
+
+
+  # -----------------------------------------------
+  # Pantheon polkit agent services
+  # -----------------------------------------------     
+
+  - type: systemd
+    system:
+      enabled:
+        - io.elementary.desktop.agent-polkit.service
