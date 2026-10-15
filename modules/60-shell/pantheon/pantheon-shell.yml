@@ -1,0 +1,52 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Pantheon repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - - garaevdi/pantheon-rpm
+
+
+  # -----------------------------------------------
+  # Pantheon packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - elementary-dock
+        - elementary-greeter
+        - elementary-initial-setup
+        - elementary-monitor
+        - elementary-settings
+        - elementary-shortcut-overlay
+        - elementary-sideload
+        - gala
+        - gcr
+        - PackageKit-bootc
+        - pantheon-agent-polkit
+        - pantheon-session-settings
+        - plymouth-theme-elementary
+        - brightnessctl
+        - playerctl
+        - wl-clipboard
+        - switchboard
+        - wingpanel
+        - xdg-desktop-portal-pantheon
+
+
+  # -----------------------------------------------
+  # Pantheon configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/pantheon
+        destination: /        
