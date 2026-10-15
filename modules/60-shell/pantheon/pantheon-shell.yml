@@ -10,7 +10,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - garaevdi/pantheon-rpm
+        - garaevdi/pantheon-rpm  
 
 
   # -----------------------------------------------
