@@ -15,16 +15,10 @@ modules:
       files:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       cleanup: true 
-
-
-  # -----------------------------------------------
-  # Pantheon packages
-  # -----------------------------------------------
-
-  - type: dnf
     install:
-      install-weak-deps: false
       packages:
+        - appcenter
+        - elementary-code
         - elementary-dock
         - elementary-greeter
         - elementary-initial-setup
@@ -32,14 +26,44 @@ modules:
         - elementary-settings
         - elementary-shortcut-overlay
         - elementary-sideload
+        - elementary-terminal
+        - elementary-files
+        - elementary-files-portal
+        - elementary-onboarding
         - gala
         - gcr
+        - PackageKit-bootc
         - pantheon-agent-polkit
         - pantheon-session-settings
         - plymouth-theme-elementary
         - switchboard
         - wingpanel
         - xdg-desktop-portal-pantheon
+
+
+  # -----------------------------------------------
+  # Pantheon packages
+  # -----------------------------------------------
+
+#  - type: dnf
+#    install:
+#      install-weak-deps: false
+#      packages:
+#        - elementary-dock
+#        - elementary-greeter
+#        - elementary-initial-setup
+#        - elementary-monitor
+#        - elementary-settings
+#        - elementary-shortcut-overlay
+#        - elementary-sideload
+#        - gala
+#        - gcr
+#        - pantheon-agent-polkit
+#        - pantheon-session-settings
+#        - plymouth-theme-elementary
+#        - switchboard
+#        - wingpanel
+#        - xdg-desktop-portal-pantheon
 
 
   # -----------------------------------------------
