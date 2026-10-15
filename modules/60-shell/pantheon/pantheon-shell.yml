@@ -20,21 +20,27 @@ modules:
   - type: dnf        
     install:
       packages:
-        - elementary-dock
-        - elementary-greeter
+        - metapkg-pantheon-shell
+        #- elementary-dock
+        #- elementary-greeter
+        #- elementary-settings
+        #- elementary-settings-daemon
+        #- gala
+        #- gala-wayland
+        #- pantheon-agent-polkit
+        #- wingpanel
+        #- xdg-desktop-portal-pantheon
+        - elementary-screenshot
+        - elementary-sound-theme
+        - elementary-bluetooth-daemon
         - elementary-initial-setup
         - elementary-monitor
-        - elementary-settings
         - elementary-shortcut-overlay
         - elementary-sideload
-        - gala
         - gcr
-        - pantheon-agent-polkit
         - pantheon-session-settings
         - plymouth-theme-elementary
         - switchboard
-        - wingpanel
-        - xdg-desktop-portal-pantheon
 
 
   # -----------------------------------------------
