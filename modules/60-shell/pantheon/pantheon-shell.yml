@@ -10,7 +10,11 @@ modules:
   - type: dnf
     repos:
       copr:
-        - garaevdi/pantheon-rpm  
+        - garaevdi/pantheon-rpm 
+      nonfree: rpmfusion
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+      cleanup: true 
 
 
   # -----------------------------------------------
@@ -30,12 +34,10 @@ modules:
         - elementary-sideload
         - gala
         - gcr
+        - lxpolkit
         - pantheon-agent-polkit
         - pantheon-session-settings
         - plymouth-theme-elementary
-        - brightnessctl
-        - playerctl
-        - wl-clipboard
         - switchboard
         - wingpanel
         - xdg-desktop-portal-pantheon
