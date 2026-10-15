@@ -10,7 +10,16 @@ modules:
   - type: dnf
     repos:
       copr:
-        - garaevdi/pantheon-rpm  
+        - garaevdi/pantheon-rpm
+    install:
+      install-weak-deps: false
+      packages:
+        - elementary-terminal
+        - elementary-files
+        - elementary-files-portal
+        - elementary-onboarding
+        - appcenter
+        - elementary-code
 
 
   # -----------------------------------------------
@@ -21,24 +30,10 @@ modules:
     repos:
       copr:
         - kylegospo/webapp-manager
-
-
-  # -----------------------------------------------
-  # Desktop packages
-  # -----------------------------------------------
-
-  - type: dnf
     install:
       install-weak-deps: false
       packages:
-        - elementary-terminal
-        - elementary-files
-        - elementary-files-portal
-        - elementary-onboarding
-        - appcenter
-        - elementary-code
         - webapp-manager
-
 
   # -----------------------------------------------
   # Desktop flatpaks
