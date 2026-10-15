@@ -11,14 +11,10 @@ modules:
     repos:
       copr:
         - garaevdi/pantheon-rpm 
-      #nonfree: rpmfusion
-      #files:
-      #  - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-      #cleanup: true 
+
+  - type: dnf        
     install:
       packages:
-        #- appcenter
-        #- elementary-code
         - elementary-dock
         - elementary-greeter
         - elementary-initial-setup
@@ -26,13 +22,8 @@ modules:
         - elementary-settings
         - elementary-shortcut-overlay
         - elementary-sideload
-        #- elementary-terminal
-        #- elementary-files
-        #- elementary-files-portal
-        #- elementary-onboarding
         - gala
         - gcr
-        #- PackageKit-bootc
         - pantheon-agent-polkit
         - pantheon-session-settings
         - plymouth-theme-elementary
