@@ -11,12 +11,21 @@ modules:
     repos:
       copr:
         - garaevdi/pantheon-rpm
+        - aspenblue/pantheon
+      #files:
+      #- pantheon-priority.repo
+
+  - type: dnf
+    install:
+      packages:
+        - pantheon-agent-polkit
+        - pantheon-dock-lite
 
   - type: dnf
     install:
       packages:
         #- metapkg-pantheon-shell
-        - elementary-dock
+        #- elementary-dock
         - elementary-greeter
         - elementary-settings
         - elementary-settings-daemon
@@ -36,15 +45,6 @@ modules:
         - pantheon-session-settings
         - plymouth-theme-elementary
         - switchboard
-
-
-  - type: dnf
-    repos:
-      copr:
-        - aspenblue/pantheon    
-    install:
-      packages:
-        - pantheon-agent-polkit
         
 
   # -----------------------------------------------

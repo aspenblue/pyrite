@@ -1,0 +1,5 @@
+[copr:copr.fedorainfracloud.org:aspenblue:pantheon]
+priority=10
+
+[copr:copr.fedorainfracloud.org:garaevdi:pantheon-rpm]
+priority=20
