@@ -60,6 +60,6 @@ modules:
   # -----------------------------------------------     
 
   - type: systemd
-    system:
+    user:
       enabled:
         - io.elementary.desktop.agent-polkit.service
