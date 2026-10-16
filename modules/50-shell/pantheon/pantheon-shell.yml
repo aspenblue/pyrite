@@ -16,15 +16,6 @@ modules:
         - pantheon-priority.repo
 
   - type: dnf
-    repos:
-      copr:
-        - aspenblue/pantheon
-    install:    
-      packages:
-        - pantheon-agent-polkit
-        - elementary-dock-lite
-
-  - type: dnf
     install:
       packages:
         #- metapkg-pantheon-shell
@@ -48,6 +39,15 @@ modules:
         - pantheon-session-settings
         - plymouth-theme-elementary
         - switchboard
+
+  - type: dnf
+    repos:
+      copr:
+        - aspenblue/pantheon
+    install:    
+      packages:
+        - pantheon-agent-polkit
+        - elementary-dock-lite        
 
 
   # -----------------------------------------------
