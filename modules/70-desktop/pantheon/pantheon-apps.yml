@@ -11,6 +11,8 @@ modules:
     repos:
       copr:
         - garaevdi/pantheon-rpm
+
+  - type: dnf
     install:
       install-weak-deps: false
       packages:
@@ -30,10 +32,12 @@ modules:
     repos:
       copr:
         - kylegospo/webapp-manager
+
+  - type: dnf
     install:
       install-weak-deps: false
       packages:
-        - webapp-manager
+        - webapp-manager        
 
   # -----------------------------------------------
   # Desktop flatpaks
