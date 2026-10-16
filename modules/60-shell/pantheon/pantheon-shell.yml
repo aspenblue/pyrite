@@ -16,10 +16,10 @@ modules:
         - pantheon-priority.repo
 
   - type: dnf
-    install:
     repos:
       copr:
         - aspenblue/pantheon
+    install:    
       packages:
         - pantheon-agent-polkit
         - elementary-dock-lite
@@ -48,7 +48,7 @@ modules:
         - pantheon-session-settings
         - plymouth-theme-elementary
         - switchboard
-        
+
 
   # -----------------------------------------------
   # Pantheon configuration
