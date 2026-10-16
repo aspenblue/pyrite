@@ -20,7 +20,7 @@ modules:
         - elementary-files
         - elementary-files-portal
         - elementary-onboarding
-        - appcenter
+        #- appcenter
         - elementary-code
 
 
@@ -57,7 +57,7 @@ modules:
           - com.getmailspring.Mailspring  # Почта
 
           # Apps
-          #- io.github.kolunmi.Bazaar      # Магазин приложений
+          - io.github.kolunmi.Bazaar      # Магазин приложений
 
 
   # -----------------------------------------------

@@ -3,15 +3,6 @@
 
 modules: 
 
-#  - type: dnf
-#    repos:
-#      copr:
-#        - aspenblue/pantheon    
-#    install:
-#      packages:
-#        - pantheon-agent-polkit
-
-
   # -----------------------------------------------
   # Pantheon packages
   # -----------------------------------------------
@@ -24,16 +15,16 @@ modules:
   - type: dnf
     install:
       packages:
-        - metapkg-pantheon-shell
-        #- elementary-dock
-        #- elementary-greeter
-        #- elementary-settings
-        #- elementary-settings-daemon
-        #- gala
-        #- gala-wayland
+        #- metapkg-pantheon-shell
+        - elementary-dock
+        - elementary-greeter
+        - elementary-settings
+        - elementary-settings-daemon
+        - gala
+        - gala-wayland
         #- pantheon-agent-polkit
-        #- wingpanel
-        #- xdg-desktop-portal-pantheon
+        - wingpanel
+        - xdg-desktop-portal-pantheon
         - elementary-screenshot
         - elementary-sound-theme
         - elementary-bluetooth-daemon
@@ -46,6 +37,15 @@ modules:
         - plymouth-theme-elementary
         - switchboard
 
+
+  - type: dnf
+    repos:
+      copr:
+        - aspenblue/pantheon    
+    install:
+      packages:
+        - pantheon-agent-polkit
+        
 
   # -----------------------------------------------
   # Pantheon configuration
