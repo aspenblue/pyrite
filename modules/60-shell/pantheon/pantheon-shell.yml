@@ -12,14 +12,17 @@ modules:
       copr:
         - garaevdi/pantheon-rpm
         - aspenblue/pantheon
-      #files:
-      #- pantheon-priority.repo
+      files:
+        - pantheon-priority.repo
 
   - type: dnf
     install:
+    repos:
+      copr:
+        - aspenblue/pantheon
       packages:
         - pantheon-agent-polkit
-        - pantheon-dock-lite
+        - elementary-dock-lite
 
   - type: dnf
     install:
