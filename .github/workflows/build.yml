@@ -28,6 +28,8 @@ jobs:
       matrix:
         recipe:
           - pyrite
+          - pyrite-lite
+          - pyrite-lite-fe
 
     name: Build ${{ matrix.recipe }}
     runs-on: ubuntu-latest

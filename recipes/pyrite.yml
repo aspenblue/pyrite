@@ -16,10 +16,8 @@ modules:
   - from-file: ../modules/30-apps/common/apps.yml
   - from-file: ../modules/50-shell/pantheon/pantheon-shell.yml
   - from-file: ../modules/50-shell/pantheon/lightdm.yml
-  - from-file: ../modules/60-desktop/common/apps.yml
   - from-file: ../modules/60-desktop/pantheon/pantheon-apps.yml
   - from-file: ../modules/80-cleanup/common/apps-clean.yml
-#  - from-file: ../modules/80-cleanup/pantheon/pantheon-clean.yml
 
 
   # -----------------------------------------------

@@ -20,20 +20,6 @@ modules:
 
 
   # -----------------------------------------------
-  # Webapp-manager repository
-  # -----------------------------------------------
-
-  - type: dnf
-    repos:
-      copr:
-        - kylegospo/webapp-manager
-
-  - type: dnf
-    install:
-      packages:
-        - webapp-manager        
-
-  # -----------------------------------------------
   # Desktop flatpaks
   # -----------------------------------------------      
 
@@ -43,16 +29,8 @@ modules:
         scope: system
         install:
 
-          # Office
-          - org.onlyoffice.desktopeditors # Офис
-
           # Web
-          - org.mozilla.firefox           # Браузер
-          - com.getmailspring.Mailspring  # Почта
-
-          # Apps
-          - io.github.kolunmi.Bazaar      # Магазин приложений
-
+          - org.mozilla.firefox
 
   # -----------------------------------------------
   # Elementary flatpaks
@@ -69,20 +47,20 @@ modules:
         install:
 
           # Basic
-          - io.elementary.calculator//stable      # Калькулятор
-          - io.elementary.calendar//stable        # Календарь
-          - io.elementary.tasks//stable           # Задачи
-          - io.elementary.iconbrowser//stable     # Иконки
-          - io.elementary.maps//stable            # Карты
+          - io.elementary.calculator//stable
+          - io.elementary.calendar//stable
+          - io.elementary.tasks//stable
+          - io.elementary.iconbrowser//stable
+          - io.elementary.maps//stable
           #- io.elementary.contacts//daily
           - io.elementary.screenshot//stable
 
           # Media
-          - io.elementary.photos//stable          # Изображения
-          - io.elementary.videos//stable          # Видео
-          - io.elementary.camera//stable          # Камера
-          - io.elementary.music//stable           # Музыка
+          - io.elementary.photos//stable
+          - io.elementary.videos//stable
+          - io.elementary.camera//stable
+          - io.elementary.music//stable
 
           # Web
-          - io.elementary.mail//daily             # Почта
-          - io.elementary.capnet-assist//stable   # Помощник авторизации wifi
+          - io.elementary.mail//daily
+          - io.elementary.capnet-assist//stable

@@ -1,0 +1,70 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Pantheon packages
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - garaevdi/pantheon-rpm
+        - aspenblue/pantheon
+      files:
+        - pantheon-priority.repo
+
+  - type: dnf
+    repos:
+      copr:
+        - aspenblue/pantheon
+    install:    
+      packages:
+        - pantheon-agent-polkit
+        - elementary-dock-lite
+
+  - type: dnf
+    install:
+      packages:
+        #- metapkg-pantheon-shell
+        #- elementary-dock
+        - elementary-greeter
+        - elementary-settings
+        - elementary-settings-daemon
+        - gala
+        - gala-wayland
+        #- pantheon-agent-polkit
+        - wingpanel
+        - xdg-desktop-portal-pantheon
+        - elementary-screenshot
+        - elementary-sound-theme
+        - elementary-bluetooth-daemon
+        - elementary-initial-setup
+        - elementary-monitor
+        - elementary-shortcut-overlay
+        - elementary-sideload
+        - gcr
+        - pantheon-session-settings
+        - plymouth-theme-elementary
+        - switchboard       
+
+
+  # -----------------------------------------------
+  # Pantheon configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/pantheon
+        destination: /
+
+
+  # -----------------------------------------------
+  # Pantheon polkit agent services
+  # -----------------------------------------------     
+
+  - type: systemd
+    user:
+      enabled:
+        - io.elementary.desktop.agent-polkit.service

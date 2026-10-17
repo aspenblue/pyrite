@@ -22,13 +22,12 @@ modules:
     install:    
       packages:
         - pantheon-agent-polkit
-        - elementary-dock-lite         
 
   - type: dnf
     install:
       packages:
         #- metapkg-pantheon-shell
-        #- elementary-dock
+        - elementary-dock
         - elementary-greeter
         - elementary-settings
         - elementary-settings-daemon

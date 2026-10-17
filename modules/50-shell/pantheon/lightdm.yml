@@ -4,20 +4,6 @@
 modules: 
 
   # -----------------------------------------------
-  # Greeter packages
-  # -----------------------------------------------
-
-  #- type: dnf
-  #  install:
-  #    install-weak-deps: false
-  #    packages:
-        # Cinnamon display manager and greeter stack.
-  #      - lightdm
-  #      - lightdm-gtk
-  #      - slick-greeter
-
-
-  # -----------------------------------------------
   # Lightdm configuration
   # -----------------------------------------------
 

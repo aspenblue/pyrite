@@ -1,0 +1,45 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+version: 1
+
+name: pyrite-lite-fe
+
+description: "Personal Fedora Atomic image based on Universal Blue, with Pantheon DE."
+
+base-image: ghcr.io/ublue-os/base-main
+image-version: 44
+
+modules:
+
+  - from-file: ../modules/20-system/common/system.yml
+  - from-file: ../modules/30-apps/common/apps.yml
+  - from-file: ../modules/50-shell/pantheon/pantheon-lite-shell.yml
+  - from-file: ../modules/50-shell/pantheon/lightdm.yml
+  - from-file: ../modules/60-desktop/common/fe-apps.yml
+  - from-file: ../modules/60-desktop/pantheon/pantheon-fe-apps.yml
+  - from-file: ../modules/80-cleanup/common/apps-clean.yml
+
+
+  # -----------------------------------------------
+  # OS details
+  # -----------------------------------------------
+
+  - type: os-release
+    properties:
+      ID: aspenblue-pyrite
+      ID_LIKE: fedora
+      NAME: "Aspenblue Pyrite"
+      PRETTY_NAME: "Aspenblue Pyrite 44 (Universal Blue)"
+      VERSION: "44"
+      DEFAULT_HOSTNAME: pyrite
+      VARIANT: "Lite"
+      VARIANT_ID: lite 
+      HOME_URL: "https://github.com/aspenblue/pyrite"
+
+
+  # -----------------------------------------------
+  # Sign image
+  # -----------------------------------------------
+
+  - type: signing
