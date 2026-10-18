@@ -19,7 +19,7 @@ modules:
     install:
       packages:
         #- metapkg-pantheon-shell
-        - elementary-dock
+        #- elementary-dock
         - elementary-greeter
         - elementary-settings
         - elementary-settings-daemon
