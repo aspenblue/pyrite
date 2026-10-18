@@ -4,19 +4,14 @@
 modules: 
 
   # -----------------------------------------------
-  # Pantheon repository
+  # Remove mainline packages
   # -----------------------------------------------
 
   - type: dnf
-    install:
-      install-weak-deps: false
+    remove:
       packages:
-        - elementary-terminal
-        - elementary-files
-        - elementary-files-portal
-        - elementary-onboarding
-        #- appcenter
-        - elementary-code
+        - appcenter
+        - elementary-mail
 
 
   # -----------------------------------------------
@@ -27,11 +22,10 @@ modules:
     repos:
       copr:
         - kylegospo/webapp-manager
-
-  - type: dnf
     install:
       packages:
-        - webapp-manager        
+        - webapp-manager
+
 
   # -----------------------------------------------
   # Desktop flatpaks
@@ -44,45 +38,10 @@ modules:
         install:
 
           # Office
-          - org.onlyoffice.desktopeditors # Офис
+          - org.onlyoffice.desktopeditors
 
           # Web
-          - org.mozilla.firefox           # Браузер
-          - com.getmailspring.Mailspring  # Почта
+          - com.getmailspring.Mailspring
 
           # Apps
-          - io.github.kolunmi.Bazaar      # Магазин приложений
-
-
-  # -----------------------------------------------
-  # Elementary flatpaks
-  # -----------------------------------------------      
-
-  - type: default-flatpaks
-    configurations:
-      - notify: false
-        scope: system
-        repo:
-          url: https://flatpak.elementary.io/repo.flatpakrepo
-          name: elementary
-          title: elementary AppCenter
-        install:
-
-          # Basic
-          - io.elementary.calculator//stable      # Калькулятор
-          - io.elementary.calendar//stable        # Календарь
-          - io.elementary.tasks//stable           # Задачи
-          - io.elementary.iconbrowser//stable     # Иконки
-          - io.elementary.maps//stable            # Карты
-          #- io.elementary.contacts//daily
-          - io.elementary.screenshot//stable
-
-          # Media
-          - io.elementary.photos//stable          # Изображения
-          - io.elementary.videos//stable          # Видео
-          - io.elementary.camera//stable          # Камера
-          - io.elementary.music//stable           # Музыка
-
-          # Web
-          #- io.elementary.mail//daily             # Почта
-          - io.elementary.capnet-assist//stable   # Помощник авторизации wifi
+          - io.github.kolunmi.Bazaar

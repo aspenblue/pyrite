@@ -1,0 +1,16 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Pantheon COPR repos
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - garaevdi/pantheon-rpm
+        - aspenblue/pantheon
+      files:
+        - pantheon-priority.repo
