@@ -12,16 +12,18 @@ image-version: 44
 
 modules:
 
-  - from-file: ../modules/20-system/common/system.yml
-  - from-file: ../modules/30-apps/common/apps.yml
-  - from-file: ../modules/50-shell/pantheon/pantheon-repos.yml
-  - from-file: ../modules/50-shell/pantheon/pantheon-dock-lite.yml   
-  - from-file: ../modules/50-shell/pantheon/pantheon-shell.yml
-  - from-file: ../modules/50-shell/pantheon/lightdm.yml
-  - from-file: ../modules/60-desktop/common/fe-apps.yml
-  - from-file: ../modules/60-desktop/pantheon/pantheon-apps.yml
-  - from-file: ../modules/60-desktop/pantheon/pantheon-fe-apps.yml
-  - from-file: ../modules/80-cleanup/common/apps-clean.yml
+  - from-file: ../modules/20-system/common-system.yml
+  - from-file: ../modules/30-apps/common-apps.yml
+  - from-file: ../modules/30-apps/common-fe-apps.yml  
+  - from-file: ../modules/50-shell/pantheon-repos.yml
+  - from-file: ../modules/50-shell/pantheon-dock-lite.yml   
+  - from-file: ../modules/50-shell/pantheon-shell.yml
+  - from-file: ../modules/50-shell/lightdm.yml
+  - from-file: ../modules/60-desktop/common-fe-desktop.yml
+  - from-file: ../modules/60-desktop/pantheon-desktop.yml
+  - from-file: ../modules/60-desktop/pantheon-fe-desktop.yml
+  - from-file: ../modules/70-style/pantheon-fe-style.yml  
+  - from-file: ../modules/80-cleanup/common-cleanup.yml
 
 
   # -----------------------------------------------

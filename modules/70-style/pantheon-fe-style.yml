@@ -1,0 +1,22 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Dconf system definitions
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/pantheon-fe-style
+        destination: /
+
+
+  # -----------------------------------------------
+  # Dconf system definitions apply
+  # -----------------------------------------------     
+
+  - type: script
+    snippets:
+      - dconf update

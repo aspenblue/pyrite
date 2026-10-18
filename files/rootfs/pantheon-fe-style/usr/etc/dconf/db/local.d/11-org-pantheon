@@ -1,0 +1,2 @@
+[org/pantheon/desktop/gala/appearance]
+button-layout=':minimize,maximize,close'
