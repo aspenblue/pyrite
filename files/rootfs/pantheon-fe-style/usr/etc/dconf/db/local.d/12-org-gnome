@@ -1,2 +1,0 @@
-[org/gnome/settings-daemon/plugins/xsettings]
-overrides={'Gtk/DialogsUseHeader': <0>, 'Gtk/DecorationLayout': <':minimize,maximize,close'>}
