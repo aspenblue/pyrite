@@ -20,3 +20,11 @@ modules:
   - type: script
     snippets:
       - dconf update
+
+
+  - type: script
+    snippets:
+      - ls -l /etc/dconf/db/distro.d/
+      - cat /etc/dconf/db/distro.d/11-org-gnome
+      - dconf update
+      - ls -l /etc/dconf/db/distro
