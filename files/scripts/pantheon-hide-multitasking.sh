@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 SOURCE="/usr/share/applications/"
@@ -6,7 +7,6 @@ TARGET="/usr/etc/xdg/applications/"
 FILE="gala-multitaskingview.desktop"
 
 [[ -f "${SOURCE}${FILE}" ]] || exit 0
-[[ -d "${TARGET" ]] || exit 0
 
 install -D -m 0644 "${SOURCE}${FILE}" "${TARGET}${FILE}"
 
