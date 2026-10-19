@@ -20,6 +20,7 @@ modules:
   - from-file: ../modules/50-shell/lightdm.yml
   - from-file: ../modules/60-desktop/pantheon-desktop.yml
   - from-file: ../modules/60-desktop/pantheon-lite-desktop.yml
+  - from-file: ../modules/70-style/pantheon-style.yml
   - from-file: ../modules/80-cleanup/common-cleanup.yml
 
 

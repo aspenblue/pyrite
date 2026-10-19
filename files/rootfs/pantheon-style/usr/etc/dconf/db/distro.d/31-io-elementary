@@ -1,0 +1,2 @@
+[io/elementary/dock]
+launchers=['io.elementary.files.desktop', 'io.elementary.terminal.desktop', 'org.mozilla.firefox.desktop']
