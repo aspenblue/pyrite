@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Hide multitasking app from menu
+  # -----------------------------------------------     
+
+  - type: script
+    scripts:
+      - pantheon-hide-multitasking.sh
