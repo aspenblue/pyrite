@@ -20,7 +20,7 @@ Changes from Universal Blue base image and common Elementary images:
 > This is **not** an official Universal Blue image and it is built using unofficial COPR repositories. Currently, this image builds and runs successfully, but should be used with at own risk.
 > This repository was developed using some directed AI assistance, although its contents have been manually tested and inspected.
 ## Installation
-To install you can take any existing Fedora Atomic (including Univesal Blue) installation (i.e. Fedora Atomic Sway or Silverblue) and rebasing to this image:
+To install you can take any existing Fedora Atomic (including Univesal Blue) installation (i.e. Fedora Atomic Sway or Silverblue) and rebase to this image:
 1. Rebase to the unsigned image, to get the proper signing keys and policies installed
    ```bash
    rpm-ostree rebase ostree-unverified-registry:ghcr.io/aspenblue/pyrite:latest
@@ -55,7 +55,7 @@ You can switch from default image to Lite with:
 rpm-ostree rebase ostree-image-signed:docker://ghcr.io/aspenblue/pyrite-lite:latest
 ```
 and reboot. 
-Or you can install it from the beginning replacing `pyrite:latest` image with `pyrite-lite:latest` in installation section. 
+Or you can install it from the start replacing `pyrite:latest` image with `pyrite-lite:latest` in installation section. 
 You can switch back to default image with:
 ```bash
 rpm-ostree rebase ostree-image-signed:docker://ghcr.io/aspenblue/pyrite:latest
@@ -77,7 +77,7 @@ You can switch from default image to Lite FE with:
 rpm-ostree rebase ostree-image-signed:docker://ghcr.io/aspenblue/pyrite-lite-fe:latest
 ```
 and reboot. 
-Or you can install it from the beginning replacing `pyrite:latest` image with `pyrite-lite-fe:latest` in installation section. 
+Or you can install it from the start replacing `pyrite:latest` image with `pyrite-lite-fe:latest` in installation section. 
 ## ISO
 If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/how-to/generate-iso/#_top). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 ```bash
