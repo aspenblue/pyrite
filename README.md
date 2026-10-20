@@ -1,5 +1,6 @@
-
-![[aspenblue/pyrite/docs/images/aspenblue.png]]
+<p align="center">
+  <img src="docs/images/aspenblue.png" alt="Logo">
+</p>
 
 # AspenBlue Pyrite
 
