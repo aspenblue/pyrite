@@ -16,6 +16,7 @@ Changes from Universal Blue base image and common Elementary images:
 - [changed] Most Elementary apps replaced with their Flatpak versions (stable branch),
 - [removed] Vim.
 
+> [!NOTE]
 > This is **not** an official Universal Blue image and it is built using unofficial COPR repositories. Currently, this image builds and runs successfully, but should be used with at own risk.
 > This repository was developed using some directed AI assistance, although its contents have been manually tested and inspected.
 ## Installation
@@ -68,6 +69,7 @@ Lite FE is an opinionated version of image, it has several changes compared to L
 - [changed] Appcenter replaced with Bazaar flatpak,
 - [changed] Elementary Mail replaced with Mailspring flatpak.
 
+> [!NOTE]
 > Real set of apps and tweaks in this image is about to change at any time.
 
 You can switch from default image to Lite FE with:
