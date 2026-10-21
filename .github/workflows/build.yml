@@ -1,4 +1,4 @@
-name: Build AspenBlue Pyrite
+name: Build
 
 on:
   push:
